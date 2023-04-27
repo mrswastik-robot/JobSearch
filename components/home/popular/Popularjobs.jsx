@@ -27,9 +27,9 @@ const Popularjobs = () => {
 
   const [selectedJob, setSelectedJob] = useState();
 
-  const handleCardPress = (item) => {
+  const handleCardPress = (item) => {                              //ye function yaha se popularJOBSCARD me ja rha hain aur phir waha se tap krne pe time k saath waapas yaha aa kr execute ho raha hain
     router.push(`/job-details/${item.job_id}`);
-    setSelectedJob(item.job_id);
+    setSelectedJob(item.job_id);                                   //ye setSelectedJob ka kaam ye hain ki ye popularJobCard me jaa raha aur phir waha styling k kaam aaraa jisse jab apan kisi card me tap kr rahe to uksa color change ho jara hain
   };
 
   return (
